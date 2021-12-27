@@ -8,7 +8,7 @@ export default function App() {
 
     return <main>
         {show ? <Clock /> : ''}
-        <button onClick={() => setShow(!show)}>click</button>
+        {/* <button onClick={() => setShow(!show)}>click</button>*/}
         <Title />
         <ToDo />
     </main>

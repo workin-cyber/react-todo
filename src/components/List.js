@@ -1,8 +1,14 @@
 import ListItem from "./ListItem";
 
 export default function List(props) {
+    const list = props.list
     return <ul>
-        <ListItem done={props.done} />
-        <ListItem done={props.done} />
+        {list.map(t =>
+            <ListItem
+                key={t.id}
+                text={t.text}
+                done={t.done}
+            />
+        )}
     </ul>
 }
