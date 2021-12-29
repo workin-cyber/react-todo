@@ -15,10 +15,8 @@ export default function ToDo() {
             })
     }
 
-    console.log('tasksList', tasksList)
-
     return <div className="toDo">
-        <TaskForm />
+        <TaskForm refreshView={getTasks} />
         <List list={tasksList.filter(t => !t.done)} refreshView={getTasks} />
         <hr />
         <List list={tasksList.filter(t => t.done)} refreshView={getTasks} />

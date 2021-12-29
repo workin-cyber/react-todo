@@ -12,4 +12,8 @@ export default function List(props) {
         )}
     </ul>
 }
-/* id={t.id} text={t.text} done={t.done} */
+/* 
+id={t.id} 
+text={t.text} 
+done={t.done} 
+*/
